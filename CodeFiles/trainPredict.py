@@ -4,7 +4,7 @@ from keras import backend as K
 import matplotlib.pyplot as plt
 
 # ---------Define Input Parameters--------------------------------
-img_width, img_height = 300, 300
+img_width, img_height = 150, 150
 
 # ---------Define Backend-----------------------------------------
 # if channels_first then Theano , if channels_last then TensorFlow
@@ -130,11 +130,7 @@ img, x = get_image(var_test_image)
 result= model.predict(x)
 imshow(img)
  
-
-
 training_set.class_indices
-
-
 
 # Result
 result[0][0]
