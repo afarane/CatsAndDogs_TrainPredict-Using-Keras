@@ -2,11 +2,13 @@
 
 Using Anaconda :
 
-Run Following Commands in 'Anaconda Prompt' :
+Installation Commands in 'Anaconda Prompt' :
 
 - conda create -n keras pip python=3.5
 
 - activate keras
+
+- pip install --ignore-installed --upgrade tensorflow
 
 - conda install -c conda-forge keras
 
