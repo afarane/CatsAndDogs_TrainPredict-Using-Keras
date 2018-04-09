@@ -3,10 +3,10 @@ from keras.layers import Conv2D,MaxPooling2D,Flatten,Dense,Dropout
 from keras import backend as K
 import matplotlib.pyplot as plt
 
-# ---------Define Input Parameters--------------------------------
+# --------- Define Input Parameters ---------
 img_width, img_height = 150, 150
 
-# ---------Define Backend-----------------------------------------
+# --------- Define Backend ---------
 # if channels_first then Theano , if channels_last then TensorFlow
 
 if K.image_data_format() == 'channels_first':
@@ -14,7 +14,7 @@ if K.image_data_format() == 'channels_first':
 else:
     input_shape = (img_width, img_height, 3)
 
-# ==========Model Architecture====================================
+# =========================== Model Architecture ===========================
 # Imput Layer 
 model = Sequential()
 
@@ -48,7 +48,7 @@ model.add(Dense(units=1, activation='sigmoid'))
 model.compile(optimizer='adam',loss='binary_crossentropy', metrics=['accuracy'])
 
 
-# ================ data augmentation
+# --------- data augmentation ---------
 from keras.preprocessing.image import ImageDataGenerator
 	
 batch_size = 5
@@ -90,7 +90,7 @@ history  = model.fit_generator(
     validation_steps=test_samples )
 	
 
-# ======================== Save Model==============================
+# ======================== Save Model ==============================
 #model.save_weights("output/Model_weights.h5")
 model.save("data/output/Model.h5",True)
 print("Saved model to disk")
@@ -109,8 +109,9 @@ plt.show()
 
 # ----------------------------------------------------------------
 print('Training Finished ! ')
+# ----------------------------------------------------------------
 
-# ========================= Part 2: Prediction =============================
+# =========================== Part 2: Prediction ===========================
 var_test_image = 'data/predict/d2.png'
 
 import numpy as np
