@@ -127,6 +127,7 @@ def get_image(path):
     return img, x
  
 img, x = get_image(var_test_image)    
+#model = keras.model.load_model("data/output/Model.h5")
 result= model.predict(x)
 imshow(img)
  
