@@ -139,10 +139,10 @@ training_set.class_indices
 # Result
 result[0][0]
 if result[0][0] ==1:
-    prediction = 'Drawing02'
+    prediction = 'File01'
     print("prediction = " + prediction)
 else:
-    prediction = 'Drawing01'
+    prediction = 'File02'
     print("prediction = " + prediction)
     
 
