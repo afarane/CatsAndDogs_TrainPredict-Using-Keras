@@ -21,7 +21,9 @@ Installation Commands in 'Anaconda Prompt' :
 
 If you are using Anaconda then you will need to set default Backend by editing following file:
 
-- C:\ProgramData\Anaconda3\envs\keras\etc\conda\activate.d\keras_activate.bat
+- ${CONDA_PREFIX}/etc/conda/activate.d/keras_activate.bat
+
+(Ex. C:\ProgramData\Anaconda3\envs\keras\etc\conda\activate.d\keras_activate.bat )
 
 - set "KERAS_BACKEND=tensorflow"
 
