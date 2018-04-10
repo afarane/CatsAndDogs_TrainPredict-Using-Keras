@@ -12,6 +12,8 @@ Installation Commands in 'Anaconda Prompt' :
 
 - conda install -c conda-forge keras
 
+- conda install -c menpo opencv
+
 
 ( Using PIP: pip install keras )
 
