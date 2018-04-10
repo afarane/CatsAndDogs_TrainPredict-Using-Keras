@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 img_width, img_height = 150, 150
 train_data_dir = 'data/train'
 validation_data_dir = 'data/validation'
-train_samples = 64
-validation_samples = 22
-epoch = 20
-batch_size = 4
+train_samples = 2000
+validation_samples = 400
+epoch = 30
+batch_size = 20
 
 # --------- Define Backend ---------
 # if channels_first then Theano , if channels_last then TensorFlow
