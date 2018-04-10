@@ -15,10 +15,18 @@ Installation Commands in 'Anaconda Prompt' :
 
 ( Using PIP: pip install keras )
 
+<b> Check Keras Backned: </b>
+
+Check this file : C:\Users\YourUserName\.keras\keras.json
+
+"image_data_format": "channels_last"
+
+(see <a href="https://keras.io/backend/">Keras Backend a/>)
+  
 Open Command Prompt and Set Tensorflow backend
 
 - set "KERAS_BACKEND=tensorflow"
 
-To Change Dir in Ananconda Prompt :
+<u> To Change Dir in Ananconda Prompt : </u>
 
 - cd /D D:\Downloads
