@@ -5,6 +5,12 @@ import matplotlib.pyplot as plt
 
 # --------- Define Input Parameters ---------
 img_width, img_height = 150, 150
+train_data_dir = 'data/train'
+validation_data_dir = 'data/validation'
+train_samples = 64
+validation_samples = 22
+epoch = 20
+batch_size = 4
 
 # --------- Define Backend ---------
 # if channels_first then Theano , if channels_last then TensorFlow
@@ -41,7 +47,7 @@ model.add(Dense(units=64,activation='relu'))
 model.add(Dense(units=64,activation='relu'))
 model.add(Dropout(0.2))
 
-# Output Layer
+# Final / Output Layer
 model.add(Dense(units=1, activation='sigmoid'))
 
 # Compiling the CNN
@@ -60,34 +66,29 @@ train_datagen = ImageDataGenerator(
     zoom_range=0.2,
     horizontal_flip=True)
 
-test_datagen = ImageDataGenerator(rescale=1./ 255)
+validation_datagen = ImageDataGenerator(rescale=1./ 255)
 
 # 1. Training Set 
-train_data_dir = 'data/train_data'
 training_set = train_datagen.flow_from_directory(
     train_data_dir,
     target_size=(img_width, img_height),
     batch_size=batch_size,
     class_mode='binary')
 
-# 2. Test Set 	
-test_data_dir = 'data/test_data'
-test_set = test_datagen.flow_from_directory(
-    test_data_dir,
+# 2. Validation Set 	
+validation_set = validation_datagen.flow_from_directory(
+    validation_data_dir,
     target_size=(img_width, img_height),
     batch_size=batch_size,
     class_mode='binary')
 
 # 3. Create a loss history
-train_samples = 7
-test_samples = 5
-epoch = 10
 history  = model.fit_generator(
     training_set,
     steps_per_epoch=train_samples, 
     epochs=epoch, 
-    validation_data=test_set, 
-    validation_steps=test_samples )
+    validation_data=validation_set, 
+    validation_steps=validation_samples )
 	
 
 # ======================== Save Model ==============================
@@ -111,37 +112,3 @@ plt.show()
 print('Training Finished ! ')
 # ----------------------------------------------------------------
 
-# =========================== Part 2: Prediction ===========================
-var_test_image = 'data/predict/d2.png'
-
-import numpy as np
-from keras.preprocessing import image
-from keras.applications.imagenet_utils import preprocess_input
-from matplotlib.pyplot import imshow
-
-
-def get_image(path):
-    img = image.load_img(path, target_size=(img_width, img_height))
-    x = image.img_to_array(img)
-    x = np.expand_dims(x, axis=0)
-    x = preprocess_input(x)
-    return img, x
- 
-img, x = get_image(var_test_image)    
-#model = keras.model.load_model("data/output/Model.h5")
-result= model.predict(x)
-imshow(img)
- 
-training_set.class_indices
-
-# Result
-result[0][0]
-if result[0][0] ==1:
-    prediction = 'File01'
-    print("prediction = " + prediction)
-else:
-    prediction = 'File02'
-    print("prediction = " + prediction)
-    
-
-# ----------------------------------------------------------------
