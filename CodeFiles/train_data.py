@@ -9,7 +9,7 @@ train_data_dir = 'data/train'
 validation_data_dir = 'data/validation'
 nb_train_samples = 4000
 nb_validation_samples = 900
-epoch = 50
+epoch = 30
 batch_size = 400
 
 # Model.Compile Parameters :
@@ -89,8 +89,9 @@ validation_set = validation_datagen.flow_from_directory(
 history  = model.fit_generator(
     training_set,
     steps_per_epoch=nb_train_samples // batch_size, # batch_size
-    epochs=epoch, 
-    validation_data=validation_set, 
+    epochs=epoch,
+	verbose=2,
+	validation_data=validation_set,
     validation_steps=nb_validation_samples // batch_size)
 	
 
