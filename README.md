@@ -21,7 +21,7 @@ Check this file : C:\Users\YourUserName\.keras\keras.json
 
 "image_data_format": "channels_last"
 
-(see <a href="https://keras.io/backend/">Keras Backend a/>)
+(see <a href="https://keras.io/backend/">Keras Backend <a/> )
   
 Open Command Prompt and Set Tensorflow backend
 
