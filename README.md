@@ -14,3 +14,11 @@ Installation Commands in 'Anaconda Prompt' :
 
 
 ( Using PIP: pip install keras )
+
+Open Command Prompt and Set Tensorflow backend
+
+- set "KERAS_BACKEND=tensorflow"
+
+To Change Dir in Ananconda Prompt :
+
+- cd /D D:\Downloads
