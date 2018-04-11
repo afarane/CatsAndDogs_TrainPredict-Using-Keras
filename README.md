@@ -64,7 +64,7 @@ PLT Result :
 ![pltresult](https://user-images.githubusercontent.com/27011804/38608394-d9ae79fc-3d98-11e8-8dde-7c1224920e59.jpg)
 
 --------------
-<b> 1. train_data_2 </b>
+<b> 2. train_data_2 </b>
 
 Optimizer = rmsprop
 
@@ -78,7 +78,7 @@ PLT Result :
 
 
 --------------
-<b> 1. train_data_3 </b>
+<b> 3. train_data_3 </b>
 
 Optimizer = nadam
 
