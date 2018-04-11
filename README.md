@@ -48,13 +48,15 @@ Open Command Prompt and Set Tensorflow backend
 ==============================================
 
 Result:
+
 --------------
 
 1. train_data_1.py
 
 ![console](https://user-images.githubusercontent.com/27011804/38608379-cf95a2ec-3d98-11e8-8f47-ba2e86988fca.PNG)
-
 --------------
 
 
 ![pltresult](https://user-images.githubusercontent.com/27011804/38608394-d9ae79fc-3d98-11e8-8dde-7c1224920e59.jpg)
+
+--------------
