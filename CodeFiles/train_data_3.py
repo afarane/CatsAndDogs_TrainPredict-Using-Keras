@@ -68,7 +68,7 @@ model.add(Dropout(0.2))
 model.add(Dense(units=1, activation='sigmoid'))
 
 # Compiling the CNN
-model.compile(optimizer='adam',loss='binary_crossentropy', metrics=['accuracy'])
+model.compile(optimizer='nadam',loss='binary_crossentropy', metrics=['accuracy'])
 
 
 # --------- data augmentation ---------
