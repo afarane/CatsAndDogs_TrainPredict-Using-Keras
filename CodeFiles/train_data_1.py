@@ -4,7 +4,7 @@ from keras.layers import Conv2D,MaxPooling2D,Flatten,Dense,Dropout
 from keras import backend as K
 import matplotlib.pyplot as plt
 
-# --------- Define Input Parameters ---------
+# --------- [afarane] : Define Input Parameters ---------
 img_width, img_height = 150, 150
 # ----
 train_data_dir = 'train4k'
@@ -102,7 +102,7 @@ history  = model.fit_generator(
 # ======================== Save Model ==============================
 #model.save_weights("output/Model_weights.h5")
 model.save("output/Model.h5",True)
-print("Saved model to disk")
+print("[afarane] : Saved model to disk")
 
 print("validation_set class_indices = {} ".format(validation_set.class_indices))
 
@@ -115,9 +115,9 @@ plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'validation'], loc='upper left')
 plt.savefig("output/PLTResult.jpg")
-print("Saved model to disk")
+print("[afarane] : Saved model to disk")
 #plt.show()
 
 # ----------------------------------------------------------------
-print('Training Finished ! ')
+print('[afarane] : Training Finished ! ')
 # ----------------------------------------------------------------
