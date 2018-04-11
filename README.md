@@ -51,7 +51,9 @@ Open Command Prompt and Set Tensorflow backend
 
 --------------
 
-<b> 1. train_data_1.py </b>
+<b> 1. train_data_1 </b>
+
+Optimizer = adam
 
 Console Output :
 
@@ -60,5 +62,33 @@ Console Output :
 PLT Result :
 
 ![pltresult](https://user-images.githubusercontent.com/27011804/38608394-d9ae79fc-3d98-11e8-8dde-7c1224920e59.jpg)
+
+--------------
+<b> 1. train_data_2 </b>
+
+Optimizer = rmsprop
+
+Console Output :
+
+![train_data_2](https://user-images.githubusercontent.com/27011804/38619298-7cd4163a-3db9-11e8-9255-01139c277381.PNG)
+
+PLT Result :
+
+![pltresult](https://user-images.githubusercontent.com/27011804/38619248-5e588790-3db9-11e8-94f8-9f2aa8b50b74.jpg)
+
+
+--------------
+<b> 1. train_data_3 </b>
+
+Optimizer = nadam
+
+Console Output :
+
+
+
+PLT Result :
+
+
+
 
 --------------
