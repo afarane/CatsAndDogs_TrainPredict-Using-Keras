@@ -53,7 +53,7 @@ Open Command Prompt and Set Tensorflow backend
 
 <b> 1. train_data_1 </b>
 
-Optimizer = adam | Hidden_Layers = 2
+Optimizer = adam | Hidden_Layers = 2 | epoch = 50 | Final val_acc = 81.13%
 
 Console Output :
 
@@ -66,7 +66,7 @@ PLT Result :
 --------------
 <b> 2. train_data_2 </b>
 
-Optimizer = rmsprop | Hidden_Layers = 3
+Optimizer = rmsprop | Hidden_Layers = 3 | epoch = 50 | Final val_acc = 83.25%
 
 Console Output :
 
@@ -80,14 +80,15 @@ PLT Result :
 --------------
 <b> 3. train_data_Final </b>
 
-Optimizer = adam | Hidden_Layers = 3
+Optimizer = adam | Hidden_Layers = 3 | epoch = 60 | Final val_acc = 86.87%
 
 Console Output :
 
-
+![capture](https://user-images.githubusercontent.com/27011804/38685259-1a12ed2e-3e8f-11e8-85de-f2cb5354ebc9.PNG)
 
 PLT Result :
 
+![pltresult](https://user-images.githubusercontent.com/27011804/38685244-11b3dea4-3e8f-11e8-8039-0327f57bda34.jpg)
 
 
 
