@@ -19,7 +19,7 @@ Installation Commands in 'Anaconda Prompt' :
 
 <b> Change Keras Backned: </b>
 
-1. For non Anaconda :
+1. For Anaconda :
 
 If you are using Anaconda then you will need to set default Backend by editing following file:
 
@@ -29,7 +29,9 @@ If you are using Anaconda then you will need to set default Backend by editing f
 
 - set "KERAS_BACKEND=tensorflow"
 
+
 2. For non Anaconda :
+
 Check this file : C:\Users\YourUserName\.keras\keras.json
 
 "image_data_format": "channels_last"
@@ -41,7 +43,7 @@ Open Command Prompt and Set Tensorflow backend
 - set "KERAS_BACKEND=tensorflow"
 
 
-<u> To Change Dir in Ananconda Prompt : </u>
+<u> Tip: To Change Dir in Ananconda Prompt : </u>
 
 - cd /D D:\Downloads
 
@@ -93,4 +95,18 @@ PLT Result :
 
 --------------
 
+1. 
+
+Open Anaconda Prompt 
+
+- activate keras
+
 conda install -c conda-forge theano
+
+2.
+
+ ${CONDA_PREFIX}/etc/conda/activate.d/keras_activate.bat
+
+(Ex. C:\ProgramData\Anaconda3\envs\keras\etc\conda\activate.d\keras_activate.bat )
+
+- set "KERAS_BACKEND=theano"
