@@ -91,5 +91,6 @@ PLT Result :
 ![pltresult](https://user-images.githubusercontent.com/27011804/38685244-11b3dea4-3e8f-11e8-8039-0327f57bda34.jpg)
 
 
-
 --------------
+
+conda install -c conda-forge theano
