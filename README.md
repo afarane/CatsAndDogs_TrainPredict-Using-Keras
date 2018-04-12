@@ -53,7 +53,7 @@ Open Command Prompt and Set Tensorflow backend
 
 <b> 1. train_data_1 </b>
 
-Optimizer = adam
+Optimizer = adam | Hidden_Layers = 2
 
 Console Output :
 
@@ -66,7 +66,7 @@ PLT Result :
 --------------
 <b> 2. train_data_2 </b>
 
-Optimizer = rmsprop
+Optimizer = rmsprop | Hidden_Layers = 3
 
 Console Output :
 
@@ -78,9 +78,9 @@ PLT Result :
 
 
 --------------
-<b> 3. train_data_3 </b>
+<b> 3. train_data_Final </b>
 
-Optimizer = nadam
+Optimizer = adam | Hidden_Layers = 3
 
 Console Output :
 
