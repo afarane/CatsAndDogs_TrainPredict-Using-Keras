@@ -2,7 +2,9 @@
 
 <b>Dataset :</b>
 
-<a href=""https://www.kaggle.com/c/dogs-vs-cats/data>kaggle</a>
+<a href="https://www.kaggle.com/c/dogs-vs-cats/data">kaggle </a>
+
+<u>Ref: </u> <a href="https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html" > keras blog </a> 
 
 </b> Installations : </b>
 
