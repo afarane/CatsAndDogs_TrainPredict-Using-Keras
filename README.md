@@ -57,6 +57,10 @@ Open Command Prompt and Set Tensorflow backend
 
 Optimizer = adam | Hidden_Layers = 2 | epoch = 50 | Final val_acc = 81.13%
 
+nb_train_samples = 4000
+
+nb_validation_samples = 800
+
 Console Output :
 
 ![console](https://user-images.githubusercontent.com/27011804/38608379-cf95a2ec-3d98-11e8-8f47-ba2e86988fca.PNG)
@@ -67,6 +71,10 @@ PLT Result :
 
 --------------
 <b> 2. train_data_2 </b>
+
+nb_train_samples = 4000
+
+nb_validation_samples = 800
 
 Optimizer = rmsprop | Hidden_Layers = 3 | epoch = 50 | Final val_acc = 83.25%
 
@@ -80,9 +88,13 @@ PLT Result :
 
 
 --------------
-<b> 3. train_data_Final </b>
+<b> 3. train_data_3 </b>
 
 Optimizer = adam | Hidden_Layers = 3 | epoch = 60 | Final val_acc = 86.87%
+
+nb_train_samples = 4000
+
+nb_validation_samples = 800
 
 Console Output :
 
@@ -95,18 +107,21 @@ PLT Result :
 
 --------------
 
-1. 
+<b> 4. train_data_4 </b>
 
-Open Anaconda Prompt 
+Optimizer = adam | Hidden_Layers = 4 | epoch = 50 | Final val_acc = 91.80%
 
-- activate keras
+nb_train_samples = 10000
 
-conda install -c conda-forge theano
+nb_validation_samples = 3000
 
-2.
+Console Output :
 
- ${CONDA_PREFIX}/etc/conda/activate.d/keras_activate.bat
+![capture](https://user-images.githubusercontent.com/27011804/38733984-96c665fa-3f41-11e8-98e9-b2ca794f949f.PNG)
 
-(Ex. C:\ProgramData\Anaconda3\envs\keras\etc\conda\activate.d\keras_activate.bat )
+PLT Result :
 
-- set "KERAS_BACKEND=theano"
+![pltresult](https://user-images.githubusercontent.com/27011804/38733987-9827152a-3f41-11e8-87b1-448738a4fad8.jpg)
+
+
+--------------
