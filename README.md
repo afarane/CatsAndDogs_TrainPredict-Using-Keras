@@ -1,6 +1,12 @@
 # CatsAndDogs_TrainPredict-Using-Keras
 
-Using Anaconda :
+<b>Dataset :</b>
+
+<a href=""https://www.kaggle.com/c/dogs-vs-cats/data>kaggle</a>
+
+</b> Installations : </b>
+
+<u> Using Anaconda :</u>
 
 Installation Commands in 'Anaconda Prompt' :
 
@@ -17,7 +23,9 @@ Installation Commands in 'Anaconda Prompt' :
 
 ( Using PIP: pip install keras )
 
-<b> Change Keras Backned: </b>
+--------------------
+
+<b><u> Change Keras Backned: </b></u>
 
 1. For Anaconda :
 
