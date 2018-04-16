@@ -42,7 +42,7 @@ If you are using Anaconda then you will need to set default Backend by editing f
 
 2. For non Anaconda :
 
-Check this file : C:\Users\YourUserName\.keras\keras.json
+Check this file : C:\Users\YourUserName\ .keras\keras.json
 
 "image_data_format": "channels_last"
 
